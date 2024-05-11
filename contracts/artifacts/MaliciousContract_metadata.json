@@ -9,47 +9,42 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "from",
+						"name": "_auctionAddress",
 						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
 					}
 				],
-				"name": "safeTransferFrom",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_numAttacks",
 						"type": "uint256"
 					}
 				],
-				"name": "transferFrom",
+				"name": "attack",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "auction",
+				"outputs": [
+					{
+						"internalType": "contract EnglishAuction",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -65,7 +60,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/EnglishAuction.sol": "IERC721"
+			"contracts/MaliciousContract.sol": "MaliciousContract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -79,12 +74,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/EnglishAuction.sol": {
-			"keccak256": "0x17aaeae2a09130d23883c4dc56051cb9b77b9c5a0ffb052de050fb269159d475",
+		"contracts/MaliciousContract.sol": {
+			"keccak256": "0xc75654432b6d15d4110eaef9debdd8db16cba0de4f00418f625c3219372965cb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3c9298d7bf103b80c8ec6f31dc18591f87b192f3f1c22cd6543fbb3556a01f52",
-				"dweb:/ipfs/Qmdt9vqQHY7wgusjfB4jEtshLSScFDA5NTq166q4bDLpHT"
+				"bzz-raw://c04d4cd5ed3d13a04ff893ee990a3f9ec60f6c1f60118d16643bd46eab78920a",
+				"dweb:/ipfs/QmcDmwdeMNVahTaXLHTzeFWALuKEWcX4LBU1nFH557f4kk"
 			]
 		}
 	},

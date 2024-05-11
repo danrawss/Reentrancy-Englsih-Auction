@@ -269,11 +269,11 @@
 	},
 	"sources": {
 		"contracts/EnglishAuction.sol": {
-			"keccak256": "0x1a78d3cd6eec1192025aeef43b9b4413856e9afd260594b31ac6ca7cc9690099",
+			"keccak256": "0x17aaeae2a09130d23883c4dc56051cb9b77b9c5a0ffb052de050fb269159d475",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://84957aa3d76d31b92ae02b9b1731a1a719c5022fa4d9a29907d3e5e794b7c8db",
-				"dweb:/ipfs/QmSvxH8aVaBy2qMXF9jTaUdzW4wQFxJ5V7uTVFdCB3W789"
+				"bzz-raw://3c9298d7bf103b80c8ec6f31dc18591f87b192f3f1c22cd6543fbb3556a01f52",
+				"dweb:/ipfs/Qmdt9vqQHY7wgusjfB4jEtshLSScFDA5NTq166q4bDLpHT"
 			]
 		}
 	},

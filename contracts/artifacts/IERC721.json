@@ -49,7 +49,7 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"saveTransferFrom(address,address,uint256)": "30523b47",
+			"safeTransferFrom(address,address,uint256)": "42842e0e",
 			"transferFrom(address,address,uint256)": "23b872dd"
 		}
 	},
@@ -72,7 +72,7 @@
 					"type": "uint256"
 				}
 			],
-			"name": "saveTransferFrom",
+			"name": "safeTransferFrom",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"
