@@ -1,10 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-interface IERC721 {
-    function safeTransferFrom(address from, address to, uint256 tokenId) external;
-    function transferFrom(address, address, uint256) external;
-}
+import "./NFT.sol";
 
 contract EnglishAuction {
     event Start();
@@ -47,13 +44,16 @@ contract EnglishAuction {
         require(block.timestamp >= endAt, "Auction is still going");
         require(!ended, "Auction has already finished");
 
-        ended = true;
-        if (highestBidder != address(0)) {
-            nft.safeTransferFrom(address(this), highestBidder, nftId);
-            seller.transfer(highestBid);
+        if (highestBidder != address(0)) {          
+            (bool sent, ) = seller.call{value: highestBid}("");
+            require(sent, "Failed to send Ether to seller");
+
+            nft.transferFrom(address(this), highestBidder, nftId);
         } else {
-            nft.safeTransferFrom(address(this), seller, nftId);
+            nft.transferFrom(address(this), seller, nftId);
         }
+
+        ended = true;
 
         emit End(highestBidder, highestBid);
     }

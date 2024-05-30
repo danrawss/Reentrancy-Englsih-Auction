@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nft",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "approveAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "auction",
+				"outputs": [
+					{
+						"internalType": "contract EnglishAuction",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bidAuction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_startingBid",
+						"type": "uint256"
+					}
+				],
+				"name": "deployAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mintSeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nft",
+				"outputs": [
+					{
+						"internalType": "contract MyNFT",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MaliciousSeller.sol": "MaliciousSeller"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EnglishAuction.sol": {
+			"keccak256": "0x158618699b57240fa409fd16c4389f8053a90ee5eefa690fabb63cbced06971b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c773a8f8c3da767cd97bf337cd425d9f436f59bd83082440a0a5f893f5b68b2d",
+				"dweb:/ipfs/Qmdm2tadsWKjaUPgVoxjwdi2AAoCY4GaDsp1taiPiUbyFY"
+			]
+		},
+		"contracts/MaliciousSeller.sol": {
+			"keccak256": "0xf138d2cb16a9a3e0cdd66dee4c74e2cad7f52c023fce3afb5a7b3bda0c30cb59",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1b07c6abcba2a2b535128199b4b56e41d6dddbe212626a0153c36d3725f6fa6a",
+				"dweb:/ipfs/QmaobYf1aeu1Nuy7QNqLDmyqj9AmAYQSPC2XSo3rtR8GMz"
+			]
+		},
+		"contracts/NFT.sol": {
+			"keccak256": "0x95999aa14d4675d55270d7d6ba97b65bb09b34734fa0eb8b63f7b793a15163d7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9190e9bc004333c2e0a0e34c7284875a79e74a37193a3c1bb70bd9f55605cab1",
+				"dweb:/ipfs/QmdvuhyVgxaWiGzKzi58PDzmaJkvRLAfDeiEjcF6wchQWy"
+			]
+		}
+	},
+	"version": 1
+}

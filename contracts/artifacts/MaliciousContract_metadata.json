@@ -17,13 +17,7 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_numAttacks",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"name": "attack",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -31,15 +25,76 @@
 			},
 			{
 				"inputs": [],
-				"name": "auction",
+				"name": "auctionContract",
 				"outputs": [
 					{
-						"internalType": "contract EnglishAuction",
+						"internalType": "contract Auction",
 						"name": "",
 						"type": "address"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "placeBid",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -75,11 +130,11 @@
 	},
 	"sources": {
 		"contracts/MaliciousContract.sol": {
-			"keccak256": "0xc75654432b6d15d4110eaef9debdd8db16cba0de4f00418f625c3219372965cb",
+			"keccak256": "0xf2bbbafafb6fb0a68492ca88e02fed7c97dab4bf67c783efcd8b4422ac0b11d3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c04d4cd5ed3d13a04ff893ee990a3f9ec60f6c1f60118d16643bd46eab78920a",
-				"dweb:/ipfs/QmcDmwdeMNVahTaXLHTzeFWALuKEWcX4LBU1nFH557f4kk"
+				"bzz-raw://2903840b278580ebfff2ea84a0a1d529ffebf1592769b66829c3fa1d91670bdf",
+				"dweb:/ipfs/QmUw6paY7RCozqqVYidm2oag83UV9EzGw6J4NoDmSoGz6L"
 			]
 		}
 	},

@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract EnglishAuction",
+						"name": "_auction",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "auction",
+				"outputs": [
+					{
+						"internalType": "contract EnglishAuction",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stealer",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MaliciousContract.sol": "MalicousContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MaliciousContract.sol": {
+			"keccak256": "0x64399083d287b22d4a3f370ffbecc437788d3fb75bd0c6bf65450cf7bf67e09e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://966c8d52df94fd4eb6b6caff6b2563b5530a9c42eebde835b2c19bf73e8bd4f5",
+				"dweb:/ipfs/QmVcSFD2DnQAMtqkmovnvn8uxFFoLLTXmyvtD65jvMCGLX"
+			]
+		}
+	},
+	"version": 1
+}

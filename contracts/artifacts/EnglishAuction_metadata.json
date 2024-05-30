@@ -269,11 +269,19 @@
 	},
 	"sources": {
 		"contracts/EnglishAuction.sol": {
-			"keccak256": "0x17aaeae2a09130d23883c4dc56051cb9b77b9c5a0ffb052de050fb269159d475",
+			"keccak256": "0x158618699b57240fa409fd16c4389f8053a90ee5eefa690fabb63cbced06971b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3c9298d7bf103b80c8ec6f31dc18591f87b192f3f1c22cd6543fbb3556a01f52",
-				"dweb:/ipfs/Qmdt9vqQHY7wgusjfB4jEtshLSScFDA5NTq166q4bDLpHT"
+				"bzz-raw://c773a8f8c3da767cd97bf337cd425d9f436f59bd83082440a0a5f893f5b68b2d",
+				"dweb:/ipfs/Qmdm2tadsWKjaUPgVoxjwdi2AAoCY4GaDsp1taiPiUbyFY"
+			]
+		},
+		"contracts/NFT.sol": {
+			"keccak256": "0x95999aa14d4675d55270d7d6ba97b65bb09b34734fa0eb8b63f7b793a15163d7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9190e9bc004333c2e0a0e34c7284875a79e74a37193a3c1bb70bd9f55605cab1",
+				"dweb:/ipfs/QmdvuhyVgxaWiGzKzi58PDzmaJkvRLAfDeiEjcF6wchQWy"
 			]
 		}
 	},

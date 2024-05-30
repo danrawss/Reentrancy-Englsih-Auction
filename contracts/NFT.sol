@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.25;
 
 interface IERC165 {
     function supportsInterface(bytes4 interfaceID)
@@ -140,6 +140,7 @@ contract ERC721 is IERC721 {
                     == IERC721Receiver.onERC721Received.selector,
             "unsafe recipient"
         );
+    
     }
 
     function safeTransferFrom(

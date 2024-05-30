@@ -1,0 +1,60 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "bid",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "end",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MaliciousContract.sol": "Auction"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MaliciousContract.sol": {
+			"keccak256": "0xf2bbbafafb6fb0a68492ca88e02fed7c97dab4bf67c783efcd8b4422ac0b11d3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2903840b278580ebfff2ea84a0a1d529ffebf1592769b66829c3fa1d91670bdf",
+				"dweb:/ipfs/QmUw6paY7RCozqqVYidm2oag83UV9EzGw6J4NoDmSoGz6L"
+			]
+		}
+	},
+	"version": 1
+}

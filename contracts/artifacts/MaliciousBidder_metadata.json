@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nft",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "approveAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "attackExecuted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "attackInProgress",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "auction",
+				"outputs": [
+					{
+						"internalType": "contract EnglishAuction",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_startingBid",
+						"type": "uint256"
+					}
+				],
+				"name": "deployAuction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mintSeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nft",
+				"outputs": [
+					{
+						"internalType": "contract MyNFT",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MaliciousBidder.sol": "MaliciousBidder"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EnglishAuction.sol": {
+			"keccak256": "0x4f53eddd909576c83c00ab288be99298a1a267598ec700ffdfdab0374d0429e2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c8abd9292d8e9b8ac32cfb322a43b92279c31ddc2e10a0a74c65c872489d0e34",
+				"dweb:/ipfs/QmWPYeSfYRtk5nCpPKVzR34Cn8TssrTZcVtdRf9hswFfC2"
+			]
+		},
+		"contracts/MaliciousBidder.sol": {
+			"keccak256": "0xe74ce8f385cd2b79c54fdc251b250e66d43cf0d82231bffa90e43250b6260ccf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://50f791bfad8b3e0c9000d232f402a85f278ee9ed08cff336145b1f55c72aa6d3",
+				"dweb:/ipfs/QmbZjfvPGSyWEvsqvJqd9PZjYJ3wS2RffQ51edPtFzQHaE"
+			]
+		},
+		"contracts/NFT.sol": {
+			"keccak256": "0xd367eec5e73697e07c60db41041051fe3c65988810873ac345a264a2ab5b743f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://05b7fb2326a3430f3259356edd06658f10ffed33ad4b82e7fbaa767090a5a7c9",
+				"dweb:/ipfs/QmTs3BXaHd3tkajDg4uDojCtqXaATpC87CtAZxTbir642j"
+			]
+		}
+	},
+	"version": 1
+}
