@@ -1,28 +1,31 @@
-REMIX DEFAULT WORKSPACE
+# English Auction Smart Contract
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+## Overview
+This repository contains Solidity smart contracts implementing an English auction for NFTs, a demonstration of reentrancy vulnerability, and a mock NFT (ERC721) contract. The auction is deployed and managed on the Ethereum blockchain. The goal of this project is to showcase how reentrancy attacks work and demonstrate a vulnerable NFT auction scenario.
 
-This workspace contains 3 directories:
+The whole idea of the project was to change the order of transactions in the **end()** method of the auction to highlight the vulnerability, showcasing how improper handling of transaction order can lead to security issues.
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+### Smart Contracts Included
+- **EnglishAuction.sol**: Implements a simple English auction for an NFT where participants can place bids and the highest bidder wins the auction.
+- **MaliciousSeller.sol**: A contract representing a malicious actor that attempts to exploit vulnerabilities in the auction contract.
+- **ERC721.sol** and **MyNFT.sol**: Custom implementations of the ERC721 standard, used to mint and manage NFTs.
 
-SCRIPTS
+## Contract Details
+### EnglishAuction.sol
+This contract allows the auctioning of an NFT to the highest bidder. Key functions include:
+- **start()**: Starts the auction by transferring the NFT from the seller to the auction contract.
+- **end()**: Ends the auction, transfers the NFT to the highest bidder, and sends the Ether to the seller.
+- **bid()**: Allows participants to place a bid higher than the current highest bid.
+- **withdraw()**: Lets users withdraw their funds if they are not the highest bidder.
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+### MaliciousSeller.sol
+A contract that mimics a malicious seller attempting to exploit reentrancy vulnerabilities by calling functions in a sequence to manipulate the auction process. This demonstrates how improper handling of reentrancy can lead to vulnerabilities.
 
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+### ERC721.sol & MyNFT.sol
+These contracts implement the ERC721 interface, allowing the minting and burning of NFTs. **MyNFT.sol** is a mock implementation for testing the auction contract.
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+## Features
+- English auction system with a time limit.
+- A malicious contract to demonstrate a potential reentrancy attack.
+- Custom implementation of the ERC721 standard to mint and manage NFTs.
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
-
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
